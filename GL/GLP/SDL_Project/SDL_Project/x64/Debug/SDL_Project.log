@@ -1,0 +1,4 @@
+﻿Main.obj : error LNK2019: symbole externe non résolu SDL_GetError référencé dans la fonction SDL_main
+Main.obj : error LNK2019: symbole externe non résolu SDL_Init référencé dans la fonction SDL_main
+MSVCRTD.lib(exe_main.obj) : error LNK2019: symbole externe non résolu main référencé dans la fonction "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\getre\Downloads\GL\GLP\SDL_Project\x64\Debug\SDL_Project.exe : fatal error LNK1120: 3 externes non résolus

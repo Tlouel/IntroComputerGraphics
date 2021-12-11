@@ -1,0 +1,50 @@
+#include <iostream>
+#include <fstream>
+
+ifstream myFile;
+myFile.open("myFileName.fileText");
+
+if(myFile.fail()){
+
+	cerr << "Error - failed to open" << filename << endl;
+
+}
+
+fin.close();
+
+string fileText = "";
+while (getline(myFile, line)){
+
+	fileText =+ line;
+}
+
+char* shaderText = fileText.c_str();
+
+string LoadShader (string fileName){
+	ifstream myFile;
+	myFile.open(fileName);
+
+	if(myFile.fail()) {
+		cerr << "Error - failed to open" << filename << endl;
+	}
+
+	string fileText = "";
+	string line = "";
+
+	while(getline(myFile, line)) {
+		fileText += line + '\n';
+	}
+
+	cout << fileText;
+	cout << "c style : \n";
+	ptr = fileText.c_str();
+	return fileText;
+
+}
+
+string vs = LoadShader ("vertex.shader");
+const char* vertexShaderSource = vs.c_str();
+string fs = LoadShader ("fragment.shader");
+const char* fragmentShaderSource = fs.c_str;
+
+FragColor = vec4(1.0f-0.68f, 1.0f-0.228f, 1.0f-0.88f, 1.0f);
